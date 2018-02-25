@@ -1,1 +1,192 @@
-Hello World
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>alramadona</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="responsive.css">
+    <link rel="stylesheet" type="text/css" href="final.css">
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="header__inner">
+        <img class="header__logo" src="images/city.png" alt="iconic view of a cityscape">
+        <h1 class="header__title">
+          UDACITY's portfolio project
+        </h1>
+        <a id="menu" class="header__menu">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <nav id="drawer" class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#">AboutMe</a></li>
+        <li class="nav__item"><a href="#">Portofolio</a></li>
+        <li class="nav__item"><a href="#">Blog</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="content">
+        <section class="hero">
+          <article class="description">
+            <h2>Hear, here!!</h2>
+            <p>You can't start something and have it be perfect right out of the gate (John Sonmez).</p>
+          </article>
+        </section>
+
+        <section class="news top-news">
+          <h2 class="news__title">Favourite Quotes <a href="#" class="news__more">+ more</a></h2>
+          <ul>
+            <li class="top-news__item">
+              <a href="#">"Committees can criticize, but they cannot create." - Ogilvy on Advertising</a>
+            </li>
+            <li class="top-news__item">
+              <a href="#">"Experience is what you get when you didn't get what you wanted." - Unknown</a>
+            </li>
+            <li class="top-news__item">
+              <a href="#">"The two most important tools an architect has are the eraser in the drawing room and the sledge hammer on the construction site." - Frank Lloyd Wright</a>
+            </li>
+            <li class="top-news__item">
+              <a href="#">"In any area of competence (e.g., education, business, sports or performing arts) achievement is 10% performance and 90% preparation." - Tomas Chamorro-Premuzic</a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="scores">
+          <table class="scores__table">
+            <thead>
+              <tr>
+                <th>date</th>
+                <th class="scores__location">location</th>
+                <th>team</th>
+                <th colspan="2">score</th>
+                <th>team</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>yesterday</td>
+                <td class="scores__location">in memory</td>
+                <td>me</td>
+                <td>95</td>
+                <td class="winner">109</td>
+                <td class="winner">opponent</td>
+              </tr>
+              <tr>
+                <td>today</td>
+                <td class="scores__location">in the process</td>
+                <td class="winner">me</td>
+                <td class="winner">3</td>
+                <td>1</td>
+                <td>opponent</td>
+              </tr>
+              <tr>
+                <td>tomorrow</td>
+                <td class="scores__location">in planning</td>
+                <td class="winner">me</td>
+                <td class="winner">7</td>
+                <td>0</td>
+                <td>opponent</td>
+              </tr>              
+              
+            </tbody>
+          </table>
+        </section>
+
+        <section class="weather">
+          <span class="weather__location">My, Heart</span>
+          <span class="weather__desc">Sunny</span>
+          <span class="weather__today">
+          <img class="weather__today__image" src="images/weather.png" alt="icon of a partially cloudy day"><span class="weather__today__temp">13</span><span class="weather__today__deg">&deg;C</span>
+          </span>
+          <ul class="weather__next">
+            <li class="weather__next__item">
+              <span>Mon</span>
+              <img class="weather__next__image" src="images/sunny.png" alt="icon of a sunny day">
+              <span>13 &deg;C</span>
+            </li><li class="weather__next__item">
+              <span>Tues</span>
+              <img class="weather__next__image" src="images/cloudy.png" alt="icon of a cloudy day">
+              <span>13 &deg;C</span>
+            </li><li class="weather__next__item">
+              <span>Wed</span>
+              <img class="weather__next__image" src="images/cloudy.png" alt="icon of a cloudy day">
+              <span>13 &deg;C</span>
+            </li><li class="weather__next__item">
+              <span>Thu</span>
+              <img class="weather__next__image" src="images/rain.png" alt="icon of a rainy day">
+              <span>13 &deg;C</span>
+            </li><li class="weather__next__item">
+              <span>Fri</span>
+              <img class="weather__next__image" src="images/sunny.png" alt="icon of a sunny day">
+              <span>13 &deg;C</span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="news recent-news">
+          <h2 class="news__title">Latest projects <a href="#" class="news__more">+ more</a></h2>
+          <ul>
+            <li class="snippet">
+              <h3 class="snippet__title"><a href="#">Developing and validating a dynamic model of dengue transmission with application to early warnings and climate change projections</a></h3>
+              <div class="snippet__thumbnail">
+                <img src='images/grey_small.jpg' alt="grey_small_alt">
+              </div>
+              <p class="snippet__description">The aim of the project is to describe and estimate the epidemic risks of an area, with a focus on Yogyakarta, Indonesia region, that can support stakeholders to mitigate the risk of dengue. Specifically, it aims at developing a climate, weather, land use, and human mobility driven model for dengue that can run on a local and regional scale...
+              </p>
+            </li>
+            <li class="snippet">
+              <div class="snippet__thumbnail">
+                <img src='images/grey_small.jpg' alt="grey_small_alt">
+              </div>
+              <h3 class="snippet__title"><a href="#">Mobility-weighted dengue incidence predicts intra-urban outbreak risk</a></h3>
+              <p class="snippet__description">Only a very few studies have investigated the potential of using dynamic geotagged social media data for predicting the patterns of spatiotemporal spread of vector-borne diseases. We herein demonstrated the role of human movement in the intra-urban spread of a dengue outbreak by weighting local cluster data to mobility proxies from Twitter...
+              </p>
+            </li>
+            <li class="snippet">
+              <div class="snippet__thumbnail">
+                <img src='images/grey_small.jpg' alt="grey_small_alt">
+              </div>
+              <h3 class="snippet__title"><a href="#">Monitoring introduction and spread of chikungunya in the age of big data</a></h3>
+              <p class="snippet__description">We illustrate how big data can be used to assess risk of virus importation with air passenger volume from regions with current chikungunya transmission; risk of dispersion with quasi real-time, individual-level Twitter mobility data; and risk of onward transmission with estimates of seasonal vectorial capacity of Ae. albopictus to transmit chikungunya virus...
+              </p>
+            </li>
+          </ul>
+        </section>
+      </section>
+      <footer>
+        <ul>
+          <li><a href="#">Contact me</a></li>
+          <li><a href="#">Follow me on Twitter</a></li>
+          <li><a href="#">RSS</a></li>
+        </ul>
+      </footer>
+    </main>
+    <script>
+      /*
+       * Open the drawer when the menu ison is clicked.
+       */
+      var menu = document.querySelector('#menu');
+      var main = document.querySelector('main');
+      var drawer = document.querySelector('.nav');
+
+      menu.addEventListener('click', function(e) {
+        drawer.classList.toggle('open');
+        e.stopPropagation();
+      });
+      main.addEventListener('click', function() {
+        drawer.classList.remove('open');
+      });
+
+    </script>
+  </body>
+</html>
